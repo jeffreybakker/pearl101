@@ -9,3 +9,6 @@ activates. And all of the programs get a boost so now and then, but it is visibl
 b) 
 It does not matter if the window has focus on Windows.
 For linux it also doesn't matter if the window has focus (in PyCharm)
+
+6.3
+a)
