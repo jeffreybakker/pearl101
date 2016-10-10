@@ -6,9 +6,13 @@ curTime = 0
 
 while(True):
     curTime = time.clock()
-    diff =  curTime - lastTime
-    lastTime = curTime
+    nextTime = time.clock()
+    #diff =  curTime - lastTime
+    #lastTime = curTime
 
-    print("Took: {}".format(round(diff*1000000)))
+    if(curTime - nextTime > 0):
+        print("Took: {}".format(round(diff*1000000)))
+
+    
 
 
