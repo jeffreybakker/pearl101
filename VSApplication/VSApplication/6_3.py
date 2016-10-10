@@ -6,9 +6,9 @@ curTime = 0
 
 while(True):
     curTime = time.clock()
-    diff =  curTime - lastTime
+    diff = curTime - lastTime
     lastTime = curTime
 
-    print("Took: {}".format(round(diff*1000000)))
+    print("Took: {}".format(round(diff*1000000000)))
 
 
