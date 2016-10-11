@@ -20,10 +20,58 @@ Linux:  Server:         127.0.1.1
         Name:   ewi907.ewi.utwente.nl
         Address: 130.89.144.74
 
-Windows: Server:  ns5.utsp.utwente.nl
+Windows:Server:  ns5.utsp.utwente.nl
 		Address:  130.89.2.5
 
 		Non-authoritative answer:
 		Name:    ewi907.ewi.utwente.nl
 		Address:  130.89.144.74
 		Aliases:  telnetw.ewi.utwente.nl
+
+b.
+-
+
+c.
+Linux:  127.0.1.1           // Loopback to the Linux hosts file
+Windows:130.89.2.5
+
+d.
+Linux:  127.0.0.1
+Windows:130.89.92.146
+
+e.
+eth -> Ethertype -> IPv4 -> UDP -> DNS
+
+f.
+Linux:  85440
+Windows:85460
+
+
+6.8
+a.
+IP Header length: 20 bytes
+
+b.
+Linux (Firefox):    32 bytes
+Windows (Edge):     20 byes
+
+c.
+Linux:  3808 bytes
+Windows:1205 bytes
+
+
+6.9
+In the TCP flags there is a single bit which indicates if it is a SYN packet
+
+
+6.10
+Linux (Firefox):    47494 -> 47666
+Windows (Edge):     56058 -> 56171
+
+Destination port:   7701 (in http request)
+
+Your computer takes the first free port, while the server has to use the same port, otherwise we
+wouldn't know which port to connect to.
+
+6.11
+
