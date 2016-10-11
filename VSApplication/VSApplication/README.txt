@@ -13,3 +13,5 @@ For linux it also doesn't matter if the window has focus (in PyCharm)
 6.3
 So now and then there are interrupts of about 1200000 nanoseconds on Windows,
 and for linux the interrupts are about 13000 nanoseconds long
+
+IK ZIT IN SP4 LINKS ACHTERIN
