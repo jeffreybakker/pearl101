@@ -1,2 +1,21 @@
 6.4 Done
 6.5 Done
+
+
+6.6
+http://www.google.com/
+370 packets in 4 seconds
+So about 92.5 packets per second for loading google.com
+
+A bit more than expected
+
+
+6.7
+a.
+Linux:  Server:         127.0.1.1
+        Address:        127.0.1.1#53
+
+        Non-authoritative answer:
+        telnetw.ewi.utwente.nl  canonical name = ewi907.ewi.utwente.nl.
+        Name:   ewi907.ewi.utwente.nl
+        Address: 130.89.144.74
