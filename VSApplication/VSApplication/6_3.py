@@ -12,4 +12,6 @@ while(True):
     if diff > 20e-6:
         print("Took: {}".format(round(diff*1000000)))
 
+    
+
 
