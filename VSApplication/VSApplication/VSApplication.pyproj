@@ -22,13 +22,14 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="6_2.py" />
     <Compile Include="6_3.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="VSApplication.py" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="README.txt" />
+    <Content Include="OS Multitasking.txt" />
+    <Content Include="Wireshark assignments.txt" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

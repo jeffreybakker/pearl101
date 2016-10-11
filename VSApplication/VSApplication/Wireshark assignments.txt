@@ -19,3 +19,11 @@ Linux:  Server:         127.0.1.1
         telnetw.ewi.utwente.nl  canonical name = ewi907.ewi.utwente.nl.
         Name:   ewi907.ewi.utwente.nl
         Address: 130.89.144.74
+
+Windows: Server:  ns5.utsp.utwente.nl
+		Address:  130.89.2.5
+
+		Non-authoritative answer:
+		Name:    ewi907.ewi.utwente.nl
+		Address:  130.89.144.74
+		Aliases:  telnetw.ewi.utwente.nl
