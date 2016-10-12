@@ -73,5 +73,44 @@ Destination port:   7701 (in http request)
 Your computer takes the first free port, while the server has to use the same port, otherwise we
 wouldn't know which port to connect to.
 
-6.11
 
+6.11
+a. The sequence number counts bytes
+b. The acknowledgement number is the number of bytes received
+
+
+6.12
+a. The computer takes the initiative, the time out is 0.017 seconds
+b. Because there are multiple packets send from the computer after eachother
+with the same acknowledgement number
+c. The computer takes initiative and says that it hasn't yet received the next
+package
+
+
+6.13
+traceroute to gaia.cs.umass.edu (128.119.245.12), 30 hops max, 60 byte packets
+ 1  cr-ct-a.routing.utwente.nl (130.89.136.4)  26.093 ms  26.046 ms  26.034 ms
+ 2  ET4-0-0.2208.JNR01.Asd002A.surf.net (145.145.4.45)  15.004 ms  15.023 ms  15.013 ms
+ 3  surfnet-bckp.mx1.lon.uk.geant.net (62.40.124.209)  20.266 ms  20.285 ms  20.276 ms
+ 4  ae0.mx1.lon2.uk.geant.net.geant.net (62.40.98.79)  20.265 ms  20.255 ms  20.244 ms
+ 5  ae0.mx1.par.fr.geant.net (62.40.98.77)  25.821 ms  25.833 ms  25.805 ms
+ 6  et-3-1-0.102.rtsw.newy32aoa.net.internet2.edu (198.71.45.236)  91.436 ms  89.426 ms  92.038 ms
+ 7  nox300gw1-i2-re.nox.org (192.5.89.221)  92.057 ms  92.852 ms  92.830 ms
+ 8  umass-re-nox300gw1.nox.org (192.5.89.102)  100.204 ms  100.228 ms  100.206 ms
+ 9  core1-rt-xe-0-0-0.gw.umass.edu (192.80.83.101)  96.368 ms  101.074 ms  101.075 ms
+10  lgrc-rt-106-8-po-10.gw.umass.edu (128.119.0.233)  97.277 ms  101.057 ms  101.030 ms
+11  128.119.3.32 (128.119.3.32)  101.020 ms  94.372 ms  94.253 ms
+12  nscs1bbs1.cs.umass.edu (128.119.240.253)  112.939 ms  112.896 ms  112.823 ms
+13  gaia.cs.umass.edu (128.119.245.12)  108.106 ms !X  112.730 ms !X  95.847 ms !X
+
+The package leaves the UT at step 2, because in the lecture, it was said that
+everything on the campus has an IP adress that starts with 130.89
+
+6.14
+The computer sends multiple packages with the IP header ttl.
+The ttl starts off at 1, and the computer sends the packages on its path
+to the destination. Each router subtracts 1 from the ttl header and sends
+it to the next router. When the ttl reaches 0, the router stops sending
+the package further and returns a package to the original sender with
+some information. The computer continues sending packages with higher ttl
+each time until it has found it's target.
