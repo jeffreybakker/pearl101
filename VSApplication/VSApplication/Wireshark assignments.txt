@@ -76,7 +76,7 @@ wouldn't know which port to connect to.
 
 6.11
 a. The sequence number counts bytes
-b. The acknowledgement number is the number of bytes received
+b. The acknowledgement number is first byte of the next packet expected
 
 
 6.12
@@ -105,6 +105,7 @@ traceroute to gaia.cs.umass.edu (128.119.245.12), 30 hops max, 60 byte packets
 
 The package leaves the UT at step 2, because in the lecture, it was said that
 everything on the campus has an IP adress that starts with 130.89
+
 
 6.14
 The computer sends multiple packages with the IP header ttl.
