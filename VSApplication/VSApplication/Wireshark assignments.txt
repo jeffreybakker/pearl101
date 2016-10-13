@@ -114,3 +114,24 @@ it to the next router. When the ttl reaches 0, the router stops sending
 the package further and returns a package to the original sender with
 some information. The computer continues sending packages with higher ttl
 each time until it has found it's target.
+
+
+Pearl Assignment:
+Tracing route to www.t1shopper.com [208.64.252.230]
+over a maximum of 30 hops:
+
+  1     *       22 ms     7 ms  130.89.88.4
+  2     5 ms     5 ms     5 ms  ET4-0-0.2208.JNR01.Asd002A.surf.net [145.145.4.45]
+  3    11 ms     6 ms    13 ms  30gigabitethernet1-3.core1.ams1.he.net [80.249.209.150]
+  4    20 ms    21 ms    48 ms  100ge9-1.core1.lon2.he.net [72.52.92.213]
+  5    79 ms    88 ms    78 ms  100ge1-1.core1.nyc4.he.net [72.52.92.166]
+  6    86 ms    84 ms    86 ms  100ge11-2.core1.ash1.he.net [184.105.223.165]
+  7   144 ms   212 ms   206 ms  100ge13-1.core1.lax1.he.net [184.105.80.202]
+  8   162 ms   145 ms   224 ms  100ge14-1.core1.lax2.he.net [72.52.92.122]
+  9   236 ms   206 ms   210 ms  64.71.153.34
+ 10   242 ms   308 ms   204 ms  2.6-88-23.rdns.scalabledns.com [23.88.6.2]
+ 11   189 ms   206 ms   206 ms  199.197.10.26.uscolo.com [199.197.10.26]
+ 12   234 ms   206 ms   205 ms  199.197.11.46.uscolo.com [199.197.11.46]
+ 13   179 ms   261 ms   207 ms  www.t1shopper.com [208.64.252.230]
+
+Trace complete.
