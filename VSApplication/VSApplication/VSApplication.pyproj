@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>92bc92f1-58b9-49f9-b531-78ad21074169</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>6_3.py</StartupFile>
+    <StartupFile>6_18.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,6 +22,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="6_18.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="6_2.py" />
     <Compile Include="6_3.py">
       <SubType>Code</SubType>

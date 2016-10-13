@@ -136,3 +136,26 @@ over a maximum of 30 hops:
  13   179 ms   261 ms   207 ms  www.t1shopper.com [208.64.252.230]
 
 Trace complete.
+
+Tracing route to argus.nersc.gov [128.55.64.64]
+over a maximum of 30 hops:
+
+  1     1 ms     1 ms     1 ms  130.89.88.4
+  2     6 ms     5 ms     5 ms  ET4-0-0.2208.JNR01.Asd002A.surf.net [145.145.4.45]
+  3    28 ms     9 ms     5 ms  AE0.500.JNR01.Asd001A.surf.net [145.145.80.82]
+  4   142 ms    27 ms    15 ms  esnet-router.customer.surf.net [145.145.166.2]
+  5    25 ms    18 ms    52 ms  londcr5-ip-a-amstcr5.es.net [134.55.222.14]
+  6    96 ms    95 ms    90 ms  aofacr5-ip-a-londcr5.es.net [134.55.39.170]
+  7    92 ms    89 ms    88 ms  washcr5-ip-a-aofacr5.es.net [134.55.36.34]
+  8   264 ms   216 ms   113 ms  chiccr5-ip-a-washcr5.es.net [134.55.36.45]
+  9   546 ms   204 ms   207 ms  kanscr5-ip-a-chiccr5.es.net [134.55.43.82]
+ 10   150 ms   285 ms   212 ms  denvcr5-ip-a-kanscr5.es.net [134.55.49.57]
+ 11   155 ms   221 ms   209 ms  sacrcr5-ip-a-denvcr5.es.net [134.55.50.201]
+ 12   195 ms   211 ms   208 ms  sunncr5-ip-a-sacrcr5.es.net [134.55.40.6]
+ 13   535 ms   240 ms   330 ms  sunn-cr5-br1.nersc.gov [198.129.78.34]
+ 14   185 ms   258 ms   258 ms  br1-ip7-cr2.nersc.gov [128.55.192.85]
+ 15   275 ms   445 ms   232 ms  cr2-ir1.nersc.gov [128.55.192.37]
+ 16   279 ms   196 ms   564 ms  128.55.15.250
+ 17   678 ms   634 ms   210 ms  c10g-i10g.nersc.gov [128.55.15.145]
+ 18   315 ms   223 ms   293 ms  c10g-fwsm1.nersc.gov [128.55.15.226]
+
